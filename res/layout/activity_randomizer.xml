@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/randomizer_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_35"
+        android:layout_marginTop="@dimen/randomizer_margin_top" >
+
+        <TextView
+            android:id="@+id/identCoinFlip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/margin_35"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1"
+            android:text="@string/coin_flip_header"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btnFlipCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="0"
+            android:text="@string/flip"
+            android:onClick="flipCoin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/identRollDie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/margin_35"
+            android:layout_marginRight="@dimen/margin_10"
+            android:text="@string/die_roll_header"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <NumberPicker
+            android:id="@+id/sidesPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical" />
+
+        <Button
+            android:id="@+id/btnRollDie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="0"
+            android:text="@string/roll"
+            android:onClick="rollDie" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_35"
+        android:text="@string/result"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/text_50" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/done"
+        android:onClick="done" />
+
+</LinearLayout>

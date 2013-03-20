@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addPlayerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".PlayerActivity" >
+
+    <TextView
+        android:id="@+id/identPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading_add_player"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/identPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name" />
+
+    <LinearLayout
+        android:id="@+id/playerNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <EditText
+            android:id="@+id/txtPlayerName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/name" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/identPlayerLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/life" />
+
+    <LinearLayout
+        android:id="@+id/playerLifeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnMinusLife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="subtractLife"
+            android:text="@string/minus" />
+
+        <EditText
+            android:id="@+id/txtPlayerLife"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/default_life" />
+
+        <Button
+            android:id="@+id/btnPlusLife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addLife"
+            android:text="@string/plus" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playerPoisonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnMinusPoison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="subtractPoison"
+            android:text="@string/minus" />
+
+        <EditText
+            android:id="@+id/txtPlayerPoison"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/default_poison" />
+
+        <Button
+            android:id="@+id/btnPlusPoison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addPoison"
+            android:text="@string/plus" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playerBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnAddPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addPlayer"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/btnResetPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetForm"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/btnCancelPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cancelCreation"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

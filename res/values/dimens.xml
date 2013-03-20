@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="coinflip_margin_left">20dp</dimen>
+    <dimen name="randomizer_result_text_size">15dp</dimen>
+    <dimen name="randomizer_margin_top">25dp</dimen>
+    <dimen name="randomizer_row_spacing_bottom">15dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="text_25">25dp</dimen>
+    <dimen name="text_50">50dp</dimen>
+</resources>
